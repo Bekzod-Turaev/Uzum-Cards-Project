@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+/* Начало */
+.container{
+    
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    /* ПАТОМ УБРАТЬ 30 */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.katalog{
+    color: #7F4DFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    background-color: #E5E5FF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #D7D7D9;
+    border-radius: 5px;
+}
+
+.search-inp{
+    border: none;
+    outline: none;
+    width: 400px;
+    padding: 7px 0 7px 20px; 
+}
+
+.search-btn{
+    background-color: #EDEFF2;
+    padding: 10px 30px;
+    height: 100%;
+    border: none;
+}
+
+.icon-btn{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(31, 32, 38);
+    cursor: pointer;
+    padding: 10px ;
+    border-radius: 5px;
+}
+
+.icon-btn:hover{
+    background-color: #DEE0E6;
+
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.like{
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    right: 6px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #ffffff56;
+    border: none;
+    display: flex;
+    /* до justify-content: center;  мы всегда должны использовать display: flex; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px;
+}
+
+
+/* Start do a card */
+
+.flex {
+    flex-wrap: wrap;
+    /* если какой-то элемент не поместился в 
+    ячейк=container то он опускает не поместившие элементы вниз */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card {
+    width: 225px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Ichidagi elementlarni o'ziga buysintiradi */
+    cursor: pointer;
+    line-height: 20px;
+    background-color: #fff;
+    transition: box-shadow 0.3;
+}
+
+.card:hover {
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.1);
+}
+
+.card-elements {
+    padding: 5px;
+}
+
+.images img{
+    width: 100%;
+}
+
+.images {
+    position: relative;
+}
+.text{
+    position: absolute;
+    left: 6px;
+    bottom: 8px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 4px 5px;
+    text-transform: uppercase;
+    
+}
+
+.text h2{
+    font-size: 8px;
+    line-height: 8px;
+    font-weight: 600;
+
+}
+
+.card-price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.card-price h2 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #7F4DFF;
+}
+
+.main-price{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(126, 129, 140);
+}
+
+.mon-price{
+    background-color: #FFFF00;
+    border-radius: 5px;
+    width: fit-content;
+    /* width: fit-content; получает width своего отца. height is too */
+    padding: 0px 5px 2px;
+}
+
+.mon-price span{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(31, 31, 38);
+
+}
+
+.title{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(31, 32, 38);
+}
+
+/* Star */
+
+.rating svg{
+    width: 10px;
+    height: 10px;
+}
+
+.rating svg {
+    color: #FFB54C;
+    width: 17px;
+    height: 17px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 6px;
+}
+
+.rating p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(77, 79, 89);
+}
+
+.rating p span {
+    color: rgb(31, 32, 38);
+}
+
+.btn{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    background-color: #7000FF;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: #fff;
+    border: none;
+     font-size: 14;
+    font-weight: 400;
+    line-height: 18px;
+    transition: background-color 0.3s;
+    /* background-color  в transition просто напоминание на что он работает */
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: #7F4DFF;
+
+}
