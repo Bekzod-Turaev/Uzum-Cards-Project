@@ -4,4 +4,4 @@ let getCount = Number(localStorage.getItem("count"));
 
 cart_badge.textContent = getCount;
 
-
+let courseCard = document.querySelector(".")
